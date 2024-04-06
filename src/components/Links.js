@@ -11,7 +11,7 @@ const Links=()=>{
             <h1>User List</h1>
             <ul>
      {
-        Data.map(item=> <li><NavLink id={`item.id`} to={`/user/${item.id}`}>{item.name}</NavLink></li>)
+        Data.map(item=> <li><NavLink id={`item.id`} to={`/users/${item.id}`}>{item.name}</NavLink></li>)
      }
      </ul>
         </div>

@@ -7,14 +7,15 @@ const User=()=>{
     let user=Data.filter(item=> item.id===parseInt(id));
      console.log(user);
     return(
-        <div>
-            <h1>User Details</h1>
+        <div>{
+            !user ?"Loading..." :  <div> <h1>User Details</h1>
             <br/>
             <p><span style={{fontWeight:"bold"}}>Name: </span>{user[0].name}</p>
             <br/>
             <p><span style={{fontWeight:"bold"}}>Email: </span>{user[0].email}</p>
             <br/>
-            <p><span style={{fontWeight:"bold"}}>Bio: </span>{user[0].bio}</p>
+            <p><span style={{fontWeight:"bold"}}>Bio: </span>{user[0].bio}</p></div>          }
+           
         </div>
     )
 }

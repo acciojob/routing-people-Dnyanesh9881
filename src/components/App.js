@@ -11,7 +11,7 @@ const App = () => {
         {/* Do not remove the main div */}
         <Routes>
           <Route path="/" element={<Links />}   />
-          <Route path="/user/:id" element={<User />}/>
+          <Route path="/users/:id" element={<User />}/>
         </Routes>
     </div>
   )
