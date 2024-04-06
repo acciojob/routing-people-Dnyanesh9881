@@ -10,11 +10,11 @@ const User=()=>{
         <div>{
             !user ?"Loading..." :  <div> <h1>User Details</h1>
             <br/>
-            <p><span style={{fontWeight:"bold"}}>Name: </span>{user[0].name}</p>
+            <p>Name: {user[0].name}</p>
             <br/>
-            <p><span style={{fontWeight:"bold"}}>Email: </span>{user[0].email}</p>
+            <p>Email: {user[0].email}</p>
             <br/>
-            <p><span style={{fontWeight:"bold"}}>Bio: </span>{user[0].bio}</p></div>          }
+            <p>Bio: {user[0].bio}</p></div>          }
            
         </div>
     )
